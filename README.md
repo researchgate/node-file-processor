@@ -1,5 +1,8 @@
 # file-processor
 
+[![Build Status](https://travis-ci.org/researchgate/node-file-processor.svg?branch=master)](https://travis-ci.org/researchgate/node-file-processor)
+[![codecov](https://codecov.io/gh/researchgate/node-file-processor/branch/master/graph/badge.svg)](https://codecov.io/gh/researchgate/node-file-processor)
+
 Node.js utility for mass-processing files in parallel.
 
 ## Usage
