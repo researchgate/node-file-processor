@@ -1,0 +1,47 @@
+{
+  "name": "@researchgate/file-processor",
+  "version": "1.0.0",
+  "description": "Run parallel tasks on a multiple files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "precommit": "yarn lint && lint-staged",
+    "release": "standard-version"
+  },
+  "files": [
+    "index.js"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --write --tab-width 4 --trailing-comma es5 --print-width 120",
+      "git add"
+    ]
+  },
+  "author": "Sergey Tatarintsev <sergey.tatarintsev@researchgate.net> (https://github.com/SevInf)",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "worker-farm": "^1.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.3",
+    "prettier": "^1.5.3",
+    "standard-version": "^4.2.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/researchgate/node-file-processor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/researchgate/node-file-processor/issues"
+  },
+  "homepage": "https://github.com/researchgate/node-file-processor#readme"
+}
