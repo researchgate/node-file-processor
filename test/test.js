@@ -61,4 +61,20 @@ describe('success', () => {
             fileProcessor.abort(resolve);
         });
     });
+
+    test('multiple paths', () => {
+        const fileProcessor = new FileProcessor([examplePath('1.txt'), examplePath('3.txt')], workerPath);
+
+        expect.assertions(3);
+        const handler = jest.fn();
+        fileProcessor.on('queued', handler);
+        return new Promise(resolve => {
+            fileProcessor.on('end', () => {
+                expect(handler).toHaveBeenCalledWith(examplePath('1.txt'));
+                expect(handler).not.toHaveBeenCalledWith(examplePath('2.txt'));
+                expect(handler).toHaveBeenCalledWith(examplePath('3.txt'));
+                resolve();
+            });
+        });
+    });
 });

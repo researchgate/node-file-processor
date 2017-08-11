@@ -22,7 +22,7 @@
   "author": "Sergey Tatarintsev <sergey.tatarintsev@researchgate.net> (https://github.com/SevInf)",
   "license": "MIT",
   "dependencies": {
-    "glob": "^7.1.2",
+    "glob-stream": "^6.1.0",
     "worker-farm": "^1.4.1"
   },
   "devDependencies": {

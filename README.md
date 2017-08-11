@@ -26,14 +26,17 @@ module.exports = function (fileName, callback) {
 
 ### Main module
 
-Must use `FileProcessor` class and provide a it a glob pattern and path to
-worker module. Each file, matching the pattern will be processed by worker
-module.
+Must use `FileProcessor` class and provide a it one or more glob patterns and
+path to worker module. Each file, matching the pattern will be processed by
+worker module.
 
 ```js
 const FileProcessor = require('@researchgate/file-processor');
 const processor = new FileProcessor(
-    'path/to/some/files/*.txt',
+    [
+        'path/to/some/files/*.txt',
+        'some/other/path/*.js',
+    ],
     require.resolve('./worker')
 );
 
