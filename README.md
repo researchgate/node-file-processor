@@ -1,5 +1,7 @@
 # file-processor
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/researchgate/node-file-processor.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/researchgate/node-file-processor.svg?branch=master)](https://travis-ci.org/researchgate/node-file-processor)
 [![codecov](https://codecov.io/gh/researchgate/node-file-processor/branch/master/graph/badge.svg)](https://codecov.io/gh/researchgate/node-file-processor)
 
