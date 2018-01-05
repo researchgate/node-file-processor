@@ -9,13 +9,14 @@ class FileProcessor extends EventEmitter {
         const workers = (this.workers = workerFarm(options || {}, worker));
 
         let allQueued = false;
+        let errorHappened = false;
         let queuedCount = 0;
         let processedCount = 0;
 
         const checkForEnd = () => {
-            if (allQueued && queuedCount === processedCount) {
+            if (errorHappened || (allQueued && queuedCount === processedCount)) {
                 workerFarm.end(workers);
-                this.emit('end');
+                if (!errorHappened) this.emit('end');
             }
         };
 
@@ -25,6 +26,7 @@ class FileProcessor extends EventEmitter {
             workers(path, (err, result) => {
                 processedCount++;
                 if (err) {
+                    errorHappened = true;
                     this.emit('error', err);
                 } else {
                     this.emit('processed', path, result);
