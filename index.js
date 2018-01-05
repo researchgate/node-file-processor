@@ -3,10 +3,10 @@ const globStream = require('glob-stream');
 const workerFarm = require('worker-farm');
 
 class FileProcessor extends EventEmitter {
-    constructor(globPattern, worker) {
+    constructor(globPattern, worker, options) {
         super();
         const glob = (this.glob = globStream(globPattern));
-        const workers = (this.workers = workerFarm(worker));
+        const workers = (this.workers = workerFarm(options || {}, worker));
 
         let allQueued = false;
         let queuedCount = 0;
