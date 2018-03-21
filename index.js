@@ -5,8 +5,9 @@ const workerFarm = require('worker-farm');
 class FileProcessor extends EventEmitter {
     constructor(globPattern, worker, options) {
         super();
+        options = options || {};
         const glob = (this.glob = globStream(globPattern));
-        const workers = (this.workers = workerFarm(options || {}, worker));
+        const workers = (this.workers = workerFarm(options.worker || {}, worker));
 
         let allQueued = false;
         let errorHappened = false;
@@ -15,7 +16,9 @@ class FileProcessor extends EventEmitter {
 
         const checkForEnd = () => {
             if (errorHappened || (allQueued && queuedCount === processedCount)) {
-                workerFarm.end(workers);
+                if (!options.keepAlive) {
+                    workerFarm.end(workers);
+                }
                 if (!errorHappened) this.emit('end');
             }
         };
@@ -23,7 +26,7 @@ class FileProcessor extends EventEmitter {
         glob.on('data', ({ path }) => {
             queuedCount++;
             this.emit('queued', path);
-            workers(path, (err, result) => {
+            this.process(path, (err, result) => {
                 processedCount++;
                 if (err) {
                     errorHappened = true;
@@ -43,7 +46,11 @@ class FileProcessor extends EventEmitter {
         });
     }
 
-    abort(callback) {
+    process(path, callback) {
+        this.workers(path, callback);
+    }
+
+    destroy(callback) {
         this.glob.destroy();
         workerFarm.end(this.workers, callback);
     }

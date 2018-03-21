@@ -56,9 +56,9 @@ describe('success', () => {
         });
     });
 
-    test('abort', () => {
+    test('destroy', () => {
         return new Promise(resolve => {
-            fileProcessor.abort(resolve);
+            fileProcessor.destroy(resolve);
         });
     });
 
@@ -74,6 +74,33 @@ describe('success', () => {
                 expect(handler).not.toHaveBeenCalledWith(examplePath('2.txt'));
                 expect(handler).toHaveBeenCalledWith(examplePath('3.txt'));
                 resolve();
+            });
+        });
+    });
+
+    describe('keepAlive', () => {
+        let processor;
+
+        beforeEach(() => {
+            processor = new FileProcessor(examplePath('1.txt'), workerPath, { keepAlive: true });
+        });
+
+        test('allows to process more files after initial pass', () => {
+            expect.assertions(2);
+            return new Promise(resolve => {
+                processor.on('end', () => {
+                    processor.process(examplePath('2.txt'), (error, result) => {
+                        expect(error).toBe(null);
+                        expect(result).toEqual('b');
+                        resolve();
+                    });
+                });
+            });
+        });
+
+        afterEach(() => {
+            return new Promise(resolve => {
+                processor.destroy(resolve);
             });
         });
     });
