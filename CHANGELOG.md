@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### BREAKING CHANGES
 
 * worker-farm options are moved to `options.worker` key.
-* abort method renamed to destory.
+* abort method renamed to destroy.
 
 
 
