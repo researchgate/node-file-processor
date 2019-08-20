@@ -19,6 +19,9 @@
       "git add"
     ]
   },
+  "jest":{
+    "testEnvironment": "node"
+  },
   "author": "Sergey Tatarintsev <sergey.tatarintsev@researchgate.net> (https://github.com/SevInf)",
   "license": "MIT",
   "dependencies": {
@@ -26,12 +29,12 @@
     "worker-farm": "^1.4.1"
   },
   "devDependencies": {
-    "eslint": "^5.0.0",
-    "husky": "^0.14.3",
-    "jest": "^22.0.0",
-    "lint-staged": "^7.0.0",
+    "eslint": "^6.2.0",
+    "husky": "^3.0.4",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.2.3",
     "prettier": "^1.5.3",
-    "standard-version": "^4.2.0"
+    "standard-version": "^7.0.0"
   },
   "directories": {
     "test": "test"
