@@ -1,5 +1,5 @@
 const path = require('path');
-const workerPath = require.resolve('./worker');
+const workerPath = require.resolve('./workers/worker');
 const FileProcessor = require('..');
 
 const examplePath = fileName => path.join(__dirname, 'example', fileName);

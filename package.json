@@ -20,7 +20,8 @@
     ]
   },
   "jest":{
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testRegex": "/test/[^/]+\\.js$"
   },
   "author": "Sergey Tatarintsev <sergey.tatarintsev@researchgate.net> (https://github.com/SevInf)",
   "license": "MIT",
