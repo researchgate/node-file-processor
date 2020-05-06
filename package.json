@@ -35,7 +35,7 @@
     "jest": "24.9.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
-    "standard-version": "7.0.0"
+    "standard-version": "8.0.0"
   },
   "directories": {
     "test": "test"
