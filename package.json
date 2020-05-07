@@ -1,6 +1,6 @@
 {
   "name": "@researchgate/file-processor",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Run parallel tasks on a multiple files",
   "main": "index.js",
   "author": "Sergey Tatarintsev <sergey.tatarintsev@researchgate.net> (https://github.com/SevInf)",

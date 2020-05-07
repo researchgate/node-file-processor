@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/researchgate/node-file-processor/compare/v2.0.0...v3.0.0) (2020-05-07)
+
+
+### Features
+
+* Drop support for node 8 ([fdee983](https://github.com/researchgate/node-file-processor/commit/fdee983b1299dc89dd7719db67a667233e60efc6))
+
+
+### BREAKING CHANGES
+
+* Only node 10.18.1 or newer is now supported
+
 # [2.0.0](https://github.com/researchgate/node-file-processor/compare/v1.2.0...v2.0.0) (2018-03-21)
 
 
