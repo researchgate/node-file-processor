@@ -11,6 +11,9 @@
     "lint": "spire lint",
     "release": "spire release"
   },
+  "engines": {
+    "node": ">= 10.18.1"
+  },
   "files": [
     "index.js"
   ],
