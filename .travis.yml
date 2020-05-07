@@ -5,7 +5,6 @@ node_js:
   - "12"
   - "10"
 script:
-  - git remote -v
   - yarn test --coverage
 after_success:
   - bash <(curl -s https://codecov.io/bash) -f coverage/coverage-final.json
