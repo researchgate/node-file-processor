@@ -1,10 +1,6 @@
 ## [3.0.1](https://github.com/researchgate/node-file-processor/compare/v3.0.0...v3.0.1) (2020-05-07)
 
 
-### Reverts
-
-* Revert "chore: debug travis" ([a9a8898](https://github.com/researchgate/node-file-processor/commit/a9a8898fcb8a292665bb9716e8fef5de5dc3a1e5))
-
 # [3.0.0](https://github.com/researchgate/node-file-processor/compare/v2.0.0...v3.0.0) (2020-05-07)
 
 
