@@ -1,3 +1,5 @@
-module.exports = function(fileName, callback) {
-    callback(new Error('Not today'));
+'use strict';
+
+module.exports = function (fileName, callback) {
+  callback(new Error('Not today'));
 };

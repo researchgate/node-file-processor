@@ -3,49 +3,43 @@
   "version": "2.0.0",
   "description": "Run parallel tasks on a multiple files",
   "main": "index.js",
+  "author": "Sergey Tatarintsev <sergey.tatarintsev@researchgate.net> (https://github.com/SevInf)",
+  "license": "MIT",
+  "repository": "researchgate/node-file-processor",
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint .",
-    "precommit": "yarn lint && lint-staged",
-    "release": "standard-version"
+    "test": "spire test",
+    "lint": "spire lint",
+    "release": "spire release"
   },
   "files": [
     "index.js"
   ],
-  "lint-staged": {
-    "*.js": [
-      "prettier --single-quote --write --tab-width 4 --trailing-comma es5 --print-width 120",
-      "git add"
-    ]
-  },
-  "jest":{
-    "testEnvironment": "node",
-    "testRegex": "/test/[^/]+\\.js$"
-  },
-  "author": "Sergey Tatarintsev <sergey.tatarintsev@researchgate.net> (https://github.com/SevInf)",
-  "license": "MIT",
   "dependencies": {
     "glob-stream": "^6.1.0",
     "worker-farm": "^1.4.1"
   },
   "devDependencies": {
-    "eslint": "6.8.0",
-    "husky": "3.1.0",
-    "jest": "24.9.0",
-    "lint-staged": "9.5.0",
-    "prettier": "1.19.1",
-    "standard-version": "7.0.0"
+    "@researchgate/spire-config": "4.0.2",
+    "spire": "2.1.4",
+    "spire-plugin-semantic-release": "2.0.2"
   },
-  "directories": {
-    "test": "test"
+  "spire": {
+    "extends": [
+      [
+        "@researchgate/spire-config",
+        {
+          "eslint": "node",
+          "jest": "base"
+        }
+      ]
+    ],
+    "plugins": [
+      "spire-plugin-semantic-release"
+    ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/researchgate/node-file-processor.git"
+  "jest": {
+    "preset": "@researchgate/jest-preset-base",
+    "testEnvironment": "node"
   },
-  "bugs": {
-    "url": "https://github.com/researchgate/node-file-processor/issues"
-  },
-  "homepage": "https://github.com/researchgate/node-file-processor#readme"
+  "prettier": "@researchgate/prettier-config"
 }

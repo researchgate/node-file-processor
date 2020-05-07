@@ -16,12 +16,11 @@ Must export single function, accepting `fileName` and `callback`. This function
 must process the file and call the `callback` when it is done. Function can be
 asynchronous.
 
-
 ```js
 module.exports = function (fileName, callback) {
-    const result = doExpensiveProcessing(fileName);
-    callback(null, result); 
-}
+  const result = doExpensiveProcessing(fileName);
+  callback(null, result);
+};
 ```
 
 ### Main module
@@ -33,47 +32,43 @@ worker module.
 ```js
 const FileProcessor = require('@researchgate/file-processor');
 const processor = new FileProcessor(
-    [
-        'path/to/some/files/*.txt',
-        'some/other/path/*.js',
-    ],
-    require.resolve('./worker')
+  ['path/to/some/files/*.txt', 'some/other/path/*.js'],
+  require.resolve('./worker')
 );
 
 processor.on('processed', (fileName, result) => {
-    console.log(`result for ${fileName}: ${result}`);
+  console.log(`result for ${fileName}: ${result}`);
 });
 ```
 
 `FileProcessor` instace emits following events:
 
-* `queued` - file is queued for processing.
-  
+- `queued` - file is queued for processing.
+
   Arguments:
 
-    * `fileName`
-
+  - `fileName`
 
 * `processed` - file is successfully processed by worker.
 
   Arguments:
 
-    * `fileName`
-    * `result` - the result, returned by worker module 
+  - `fileName`
+  - `result` - the result, returned by worker module
 
 * `error` - worker failed to process the file
 
   Arguments:
 
-    * `error`
+  - `error`
 
 * `allQueued` - all files, matching the pattern are queued for processing.
 
   Arguments:
 
-    * `stats` - object with the following field
-      
-      * `queuedCount` - total number of queued files
-      * `processedCount` - total number of files which are already processed
+  - `stats` - object with the following field
+
+    - `queuedCount` - total number of queued files
+    - `processedCount` - total number of files which are already processed
 
 * `end` - all files are processed.

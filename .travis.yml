@@ -4,7 +4,14 @@ node_js:
   - "10"
   - "8"
 script:
-  - yarn lint
-  - yarn test:coverage
+  - yarn test --coverage
 after_success:
   - bash <(curl -s https://codecov.io/bash) -f coverage/coverage-final.json
+jobs:
+  include:
+    - stage: test
+      node_js: lts/*
+      name: "Codestyle"
+      script:
+        - yarn lint
+      after_success: skip
