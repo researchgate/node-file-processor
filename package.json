@@ -24,7 +24,7 @@
   "devDependencies": {
     "@researchgate/spire-config": "4.0.2",
     "spire": "2.1.4",
-    "spire-plugin-semantic-release": "2.0.2"
+    "spire-plugin-semantic-release": "2.1.4"
   },
   "spire": {
     "extends": [
