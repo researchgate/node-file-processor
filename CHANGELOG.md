@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/researchgate/node-file-processor/compare/v3.0.1...v3.1.0) (2020-06-03)
+
+
+### Features
+
+* Support configuring how workers are invoked ([cea4464](https://github.com/researchgate/node-file-processor/commit/cea4464ca9a22ccb01e4bd4c31aa55e8cea7c4e2))
+
 ## [3.0.1](https://github.com/researchgate/node-file-processor/compare/v3.0.0...v3.0.1) (2020-05-07)
 
 
