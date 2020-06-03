@@ -9,6 +9,7 @@ class FileProcessor extends EventEmitter {
     super();
     options = options || {};
     const glob = (this.glob = globStream(globPattern));
+    this.invokeWorker = options.invokeWorker || defaultInvokeWorker;
     const workers = (this.workers = workerFarm(options.worker || {}, worker));
 
     let allQueued = false;
@@ -49,13 +50,17 @@ class FileProcessor extends EventEmitter {
   }
 
   process(path, callback) {
-    this.workers(path, callback);
+    this.invokeWorker(this.workers, path, callback);
   }
 
   destroy(callback) {
     this.glob.destroy();
     workerFarm.end(this.workers, callback);
   }
+}
+
+function defaultInvokeWorker(workers, path, callback) {
+  workers(path, callback);
 }
 
 module.exports = FileProcessor;
