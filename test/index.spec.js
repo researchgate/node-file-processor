@@ -111,4 +111,28 @@ describe('success', () => {
       });
     });
   });
+
+  test('invokeWorker', () => {
+    expect.assertions(3);
+
+    const processor = new FileProcessor(pattern, workerPath, {
+      invokeWorker(workers, filepath, callback) {
+        workers(filepath, (err, result) =>
+          err ? callback(err) : callback(null, `${result}!`)
+        );
+      },
+    });
+
+    const handler = jest.fn();
+    processor.on('processed', handler);
+
+    return new Promise((resolve) => {
+      processor.on('end', () => {
+        expect(handler).toHaveBeenCalledWith(examplePath('1.txt'), 'a!');
+        expect(handler).toHaveBeenCalledWith(examplePath('2.txt'), 'b!');
+        expect(handler).toHaveBeenCalledWith(examplePath('3.txt'), 'c!');
+        resolve();
+      });
+    });
+  });
 });
