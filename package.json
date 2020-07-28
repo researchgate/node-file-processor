@@ -22,9 +22,9 @@
     "worker-farm": "^1.4.1"
   },
   "devDependencies": {
-    "@researchgate/spire-config": "4.0.3",
-    "spire": "2.2.0",
-    "spire-plugin-semantic-release": "2.1.5"
+    "@researchgate/spire-config": "5.0.0",
+    "spire": "3.0.0",
+    "spire-plugin-semantic-release": "3.0.0"
   },
   "spire": {
     "extends": [
