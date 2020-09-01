@@ -1,5 +1,3 @@
-'use strict';
-
 const path = require('path');
 const workerPath = require.resolve('./workers/error-worker');
 const FileProcessor = require('..');
