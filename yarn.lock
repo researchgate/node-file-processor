@@ -741,17 +741,17 @@
   resolved "https://registry.yarnpkg.com/@researchgate/eslint-settings-typescript/-/eslint-settings-typescript-1.6.1.tgz#a08631ae87b566832f18257225b2c644c412add7"
   integrity sha512-JRGaxaUniCkEYOejKGedTRgm3Q+aLqpVhN9DbngbcWfOr0h6ic111b1/BTU5bXT4FLq3mSST6weEDvK8lDEOKA==
 
-"@researchgate/jest-preset-base@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@researchgate/jest-preset-base/-/jest-preset-base-2.0.0.tgz#87359cf1c905680445e1431ab1cfe2c71b289782"
-  integrity sha512-4yJ9FcTwmu7d/4jGHXpVq+GPXUsEOTIbtT3lxJOU5v6yIHSHZ47fNWo6uj/SU33c2VMGDY48NX/iuywf56W2aQ==
+"@researchgate/jest-preset-base@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@researchgate/jest-preset-base/-/jest-preset-base-2.0.1.tgz#2258cbe0d4fd40c7302ba5eb31ce5163317cb1c5"
+  integrity sha512-whDl5f7YqHIJmECFoRh4cyxXJ0PJrOP5mxkW7sK/I96uzl8a66tAjZjAUBQ4oCMQG9XAQH8V6zIxdyk7PtPoUA==
 
-"@researchgate/jest-preset-react@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@researchgate/jest-preset-react/-/jest-preset-react-1.0.2.tgz#590ac43d0d5a22fd0e23dda79c654e42fe0dc09f"
-  integrity sha512-9f78XEoEd1lTQQ/uSCydh4gGrDCaNBy4R2+HPZJfhu7Bg5EG+/2E1cBw6Vl9etRQpegZ3gWvXNb7ztljXXJWjg==
+"@researchgate/jest-preset-react@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@researchgate/jest-preset-react/-/jest-preset-react-1.0.3.tgz#431c953d5115d47ccef0a20453393cfd564d2782"
+  integrity sha512-bzksL5sG6ED11ixG1xVRkra5KqnfXcTk6YJdH5GRZl762jqEnZyte9jBvMSi0m4wW7nNguOvb/psxRXtJDPxIA==
   dependencies:
-    "@researchgate/jest-preset-base" "^2.0.0"
+    "@researchgate/jest-preset-base" "^2.0.1"
     enzyme "^3.8.0"
     enzyme-adapter-react-16 "^1.7.1"
     jest-enzyme "^7.0.1"
@@ -765,10 +765,10 @@
   resolved "https://registry.yarnpkg.com/@researchgate/prettier-config/-/prettier-config-1.3.2.tgz#79bbb14cb0ed6e9e4c9254d86c9093debaab504e"
   integrity sha512-y4nOJs7oBf4KkawUibb7v2TjuGESTljqncmHD9p0ZE0z2sAOx/uZwDgBTwDLlL8PKsTwJpxsEIntK7DWn6pd7A==
 
-"@researchgate/spire-config@6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@researchgate/spire-config/-/spire-config-6.0.1.tgz#57ac0e1465cb0878d8b163c92b5d7ec8562550d1"
-  integrity sha512-1dDjvRxscyGzTcoBoOF83UwDGM5fwTPUvuTUvtzh6OpOkqh89YKrBYP0NISAloHcl8zoCLKWg4NWpQKSp7vtmQ==
+"@researchgate/spire-config@6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@researchgate/spire-config/-/spire-config-6.0.2.tgz#0ea1d847a08d60a09d04a411fc89bfa99c081c2d"
+  integrity sha512-289oAzvN/O9PjWJGHdCUPSI/2pEMz9Afwv9ljT4UAv8n0ihS5WTiV/pBwWilmerz1WWJzxv38mSPglKOR4byog==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/eslint-parser" "^7.11.3"
@@ -777,7 +777,7 @@
     "@researchgate/eslint-config-node-typescript" "^1.1.6"
     "@researchgate/eslint-config-react" "^2.0.10"
     "@researchgate/eslint-config-react-typescript" "^2.0.10"
-    "@researchgate/jest-preset-react" "^1.0.2"
+    "@researchgate/jest-preset-react" "^1.0.3"
     "@researchgate/prettier-config" "^1.3.2"
     "@typescript-eslint/parser" "^3.8.0"
     eslint "^7.5.0"
