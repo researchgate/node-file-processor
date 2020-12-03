@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@researchgate/spire-config": "6.0.2",
-    "spire": "3.2.1",
-    "spire-plugin-semantic-release": "3.0.2"
+    "spire": "3.2.2",
+    "spire-plugin-semantic-release": "3.2.2"
   },
   "spire": {
     "extends": [
