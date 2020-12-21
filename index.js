@@ -1,14 +1,14 @@
 'use strict';
 
 const { EventEmitter } = require('events');
-const globStream = require('glob-stream');
+const fg = require('fast-glob');
 const workerFarm = require('worker-farm');
 
 class FileProcessor extends EventEmitter {
-  constructor(globPattern, worker, options) {
+  constructor(globPattern, worker, options = {}, globOptions = {}) {
     super();
     options = options || {};
-    const glob = (this.glob = globStream(globPattern));
+    const glob = (this.glob = fg.stream(globPattern, globOptions));
     this.invokeWorker = options.invokeWorker || defaultInvokeWorker;
     const workers = (this.workers = workerFarm(options.worker || {}, worker));
 
@@ -26,7 +26,7 @@ class FileProcessor extends EventEmitter {
       }
     };
 
-    glob.on('data', ({ path }) => {
+    glob.on('data', (path) => {
       queuedCount++;
       this.emit('queued', path);
       this.process(path, (err, result) => {
