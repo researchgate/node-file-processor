@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/researchgate/node-file-processor/compare/v3.1.0...v3.2.0) (2020-12-22)
+
+
+### Features
+
+* Move to `fast-glob` and expose options for it. ([#48](https://github.com/researchgate/node-file-processor/issues/48)) ([3b5d2e5](https://github.com/researchgate/node-file-processor/commit/3b5d2e55d4ccb940ec3f7d812c0bf32256d7df09))
+
 # [3.1.0](https://github.com/researchgate/node-file-processor/compare/v3.0.1...v3.1.0) (2020-06-03)
 
 
