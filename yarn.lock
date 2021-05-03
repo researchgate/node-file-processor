@@ -845,47 +845,47 @@
   dependencies:
     "@octokit/openapi-types" "^6.1.1"
 
-"@researchgate/eslint-config-base@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-base/-/eslint-config-base-3.0.4.tgz#bfbf453c2cba2542b62ace6aa17be7ce89022b03"
-  integrity sha512-8j+usD5M4Bb5jJrGf22IpTlx9kFr9E2YhuYli5XsO76f6GUukaRbNlKinkZkZyIA5/Oa1CZQsZG4+IKxMR2l4g==
+"@researchgate/eslint-config-base@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-base/-/eslint-config-base-4.0.0.tgz#178436709da44c6811579a700331455c939b9246"
+  integrity sha512-+zyL90XXRXgguqUS64qrTMMXBJvAtcJufAQvW9YcENHNpM1t/n12EvNkD/wmt0BUX6ww8qpfJ4ZcYne+Hm1PjQ==
 
-"@researchgate/eslint-config-node-babel@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-babel/-/eslint-config-node-babel-2.0.8.tgz#ecc8f30a7a90f34a24011053f57cdb0b144dca70"
-  integrity sha512-TH7tVTxvnGvtjwSD/6h2kiq23Lu1+CPx9d0WALstxJXaA4O/PZanRSGu0pQKuPS6VaQSe3pE+L8awdGl68K7hQ==
+"@researchgate/eslint-config-node-babel@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-babel/-/eslint-config-node-babel-3.0.0.tgz#1868e8cf1d4c8b95235d18438cf34b45787d9db1"
+  integrity sha512-6lnBOheHscSOUsaFMq2f/gX4+UiRMr62jOHZnc3Yi3dcReDe30APAUh1/XWJZpgBI62LJi+psrei0y8cJJ7OsQ==
   dependencies:
-    "@researchgate/eslint-config-node" "^2.0.7"
+    "@researchgate/eslint-config-node" "^3.0.0"
 
-"@researchgate/eslint-config-node-typescript@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-typescript/-/eslint-config-node-typescript-1.1.6.tgz#3333419288edd73479bc83fb1034f8af97519c8b"
-  integrity sha512-7ON+dz6xD4Bbu9Y6ekBeeTOh/rfZamdO4ndPjcytCXaysj0GQU5Zq/GCdGBCp3R43v8knj+hbvpWWfvw10OUVw==
+"@researchgate/eslint-config-node-typescript@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-typescript/-/eslint-config-node-typescript-2.0.0.tgz#897036c8f54f8838dc07fa281ae3023d242639e1"
+  integrity sha512-4Ni2+GL/dVw82sEi8xD9GXMOIzovPOBHW1Gf1iCgEIFry20giX1UnOiZRf5JRhBYTdhE+lubCvrYUMzk1QmD6w==
   dependencies:
-    "@researchgate/eslint-config-node" "^2.0.7"
+    "@researchgate/eslint-config-node" "^3.0.0"
     "@researchgate/eslint-settings-typescript" "^1.6.1"
 
-"@researchgate/eslint-config-node@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node/-/eslint-config-node-2.0.7.tgz#7e9cb63d90a5f7bafe8fed3edd353e2a63297152"
-  integrity sha512-7ybWmt11mcOhJTITYW0F6ifJL7/DKPiVXBQm92tZ+F95RqorNO7tkWyWtmLQ3dgRtuZMi4gLeOfKponFL40P5w==
+"@researchgate/eslint-config-node@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node/-/eslint-config-node-3.0.0.tgz#b8857b049ad739eeab3ffb87344f6204bfa854c6"
+  integrity sha512-2lFrRhBipn94Ys6xOqnxPLhmf/s3ccacdap1aJT+tUaVEdpOowqwkctBflFqp0Lm9/Ch3ZThb3oAaXpAYBUCCA==
   dependencies:
-    "@researchgate/eslint-config-base" "^3.0.4"
+    "@researchgate/eslint-config-base" "^4.0.0"
 
-"@researchgate/eslint-config-react-typescript@^2.0.10":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-react-typescript/-/eslint-config-react-typescript-2.0.10.tgz#2d9aa393df51a3b112019e1fb28bc9e10e912cbc"
-  integrity sha512-rlKW+Vi9tOALfK3z/Y6t3bvl0pB8Cc76YfKM0RMyKuTZCQ7FRPJ6kgvBm0TheEsCm9ycYh9jm+VkXUdamliXew==
+"@researchgate/eslint-config-react-typescript@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-react-typescript/-/eslint-config-react-typescript-3.0.0.tgz#622dc53624f92ad471e646fc928d62a1d3a2ac3c"
+  integrity sha512-9xvO06XciPGf/rHoQ4bVITASew0BbpXswuAX0lGYVz2/O2fjj/Ij35Brg5NSMJ4TtuuDkjkVtEbztOrPUWks1w==
   dependencies:
-    "@researchgate/eslint-config-react" "^2.0.10"
+    "@researchgate/eslint-config-react" "^3.0.0"
     "@researchgate/eslint-settings-typescript" "^1.6.1"
 
-"@researchgate/eslint-config-react@^2.0.10":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-react/-/eslint-config-react-2.0.10.tgz#9c1cb89f3118b8b721b131faf605fd7566926c7e"
-  integrity sha512-gJ3jaFIvmUqNOw1CmUg8SYSLJSnX+haBhJC4o4HGO65CP8C2F/5ANTEI6YdA0LN2MgRXd0lMHEHLFzh4hCt4KQ==
+"@researchgate/eslint-config-react@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-react/-/eslint-config-react-3.0.0.tgz#bd231421d49e3cbec8a0278155f3b76f82bffbbc"
+  integrity sha512-ejgFL4lrmibKQU7JaTlJS5aEXnaTCiHP37MEh4s5trHlVQi44jh78ZXBPl95uYvNUsYO79UEkmPh18cdMOWADg==
   dependencies:
-    "@researchgate/eslint-config-base" "^3.0.4"
+    "@researchgate/eslint-config-base" "^4.0.0"
 
 "@researchgate/eslint-settings-typescript@^1.6.1":
   version "1.6.1"
@@ -916,26 +916,26 @@
   resolved "https://registry.yarnpkg.com/@researchgate/prettier-config/-/prettier-config-1.3.2.tgz#79bbb14cb0ed6e9e4c9254d86c9093debaab504e"
   integrity sha512-y4nOJs7oBf4KkawUibb7v2TjuGESTljqncmHD9p0ZE0z2sAOx/uZwDgBTwDLlL8PKsTwJpxsEIntK7DWn6pd7A==
 
-"@researchgate/spire-config@6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@researchgate/spire-config/-/spire-config-6.0.2.tgz#0ea1d847a08d60a09d04a411fc89bfa99c081c2d"
-  integrity sha512-289oAzvN/O9PjWJGHdCUPSI/2pEMz9Afwv9ljT4UAv8n0ihS5WTiV/pBwWilmerz1WWJzxv38mSPglKOR4byog==
+"@researchgate/spire-config@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/spire-config/-/spire-config-7.0.0.tgz#840e60bb402a02ded8c2d8397901952eff7353e9"
+  integrity sha512-C89lizVG65EoF4eok6R1j+X6HFA0THEwf/8pGkJptXBlAegESxyFFvqHrPBGib/PNFKtexPVqwiHVdpomgnMlA==
   dependencies:
     "@babel/core" "^7.11.1"
     "@babel/eslint-parser" "^7.11.3"
-    "@researchgate/eslint-config-node" "^2.0.7"
-    "@researchgate/eslint-config-node-babel" "^2.0.8"
-    "@researchgate/eslint-config-node-typescript" "^1.1.6"
-    "@researchgate/eslint-config-react" "^2.0.10"
-    "@researchgate/eslint-config-react-typescript" "^2.0.10"
+    "@researchgate/eslint-config-node" "^3.0.0"
+    "@researchgate/eslint-config-node-babel" "^3.0.0"
+    "@researchgate/eslint-config-node-typescript" "^2.0.0"
+    "@researchgate/eslint-config-react" "^3.0.0"
+    "@researchgate/eslint-config-react-typescript" "^3.0.0"
     "@researchgate/jest-preset-react" "^1.0.3"
     "@researchgate/prettier-config" "^1.3.2"
     "@typescript-eslint/parser" "^3.8.0"
     eslint "^7.5.0"
-    eslint-config-prettier "^6.4.0"
+    eslint-config-prettier "^8.1.0"
     eslint-plugin-import "^2.14.0"
     eslint-plugin-node "^11.0.0"
-    eslint-plugin-prettier "^3.1.1"
+    eslint-plugin-prettier "^3.3.1"
     eslint-plugin-react "^7.12.4"
     eslint-plugin-react-hooks "^4.0.0"
     prettier "^2.0.0"
@@ -3080,12 +3080,17 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@^6.0.0, eslint-config-prettier@^6.4.0:
+eslint-config-prettier@^6.0.0:
   version "6.15.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.15.0.tgz#7f93f6cb7d45a92f1537a70ecc06366e1ac6fed9"
   integrity sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==
   dependencies:
     get-stdin "^6.0.0"
+
+eslint-config-prettier@^8.1.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
+  integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
@@ -3142,7 +3147,7 @@ eslint-plugin-node@^11.0.0:
     resolve "^1.10.1"
     semver "^6.1.0"
 
-eslint-plugin-prettier@^3.1.0, eslint-plugin-prettier@^3.1.1:
+eslint-plugin-prettier@^3.1.0, eslint-plugin-prettier@^3.3.1:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.4.0.tgz#cdbad3bf1dbd2b177e9825737fe63b476a08f0c7"
   integrity sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==
